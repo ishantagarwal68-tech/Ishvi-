@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishu Editing Studio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#0b0b12;
+  color:white;
+}
+
+header{
+  padding:22px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#11111c;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+  color:#00eaff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+.hero{
+  text-align:center;
+  padding:90px 20px;
+  background:linear-gradient(135deg,#11112b,#17172b);
+}
+
+.hero h1{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.hero h1 span{
+  color:#00eaff;
+}
+
+.hero p{
+  color:#ccc;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  background:#00eaff;
+  color:#000;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+section{
+  padding:60px 8%;
+}
+
+.title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:35px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#151522;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:18px;
+  border:1px solid #29293b;
+}
+
+.card h3{
+  color:#00eaff;
+  margin:15px 0;
+}
+
+.card p{
+  color:#bbb;
+  line-height:1.6;
+}
+
+.price{
+  font-size:25px;
+  font-weight:bold;
+  margin:18px 0;
+}
+
+.contact{
+  text-align:center;
+  background:#11111c;
+}
+
+.contact p{
+  color:#ccc;
+  margin:15px 0 25px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#999;
+  background:#08080d;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:white;
+  padding:15px 20px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 20px #000;
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:34px;
+  }
+
+  nav{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Ishu Editing Studio</div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Professional <span>Editing</span> Services</h1>
+  <p>Video Editing • Banner Design • Logo Design • Thumbnail Design</p>
+  <a class="btn" href="#contact">Order Now</a>
+</section>
+
+<section id="services">
+  <h2 class="title">Our Services</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <div style="font-size:45px;">🎬</div>
+      <h3>Video Editing</h3>
+      <p>Reels, YouTube videos, Shorts, Instagram videos and professional edits.</p>
+      <div class="price">₹299+</div>
+      <a class="btn" href="#contact">Order</a>
+    </div>
+
+    <div class="card">
+      <div style="font-size:45px;">🖼️</div>
+      <h3>Banner / Poster</h3>
+      <p>Attractive YouTube banners, Instagram posters and promotional designs.</p>
+      <div class="price">₹199+</div>
+      <a class="btn" href="#contact">Order</a>
+    </div>
+
+    <div class="card">
+      <div style="font-size:45px;">🎨</div>
+      <h3>Logo Design</h3>
+      <p>Modern and unique logos for YouTube channels, businesses and brands.</p>
+      <div class="price">₹299+</div>
+      <a class="btn" href="#contact">Order</a>
+    </div>
+
+    <div class="card">
+      <div style="font-size:45px;">📱</div>
+      <h3>Thumbnail Design</h3>
+      <p>Eye-catching thumbnails designed to make your content stand out.</p>
+      <div class="price">₹149+</div>
+      <a class="btn" href="#contact">Order</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 class="title">Simple Pricing</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>Basic</h3>
+      <div class="price">₹199</div>
+      <p>Simple design<br>1 Revision<br>Fast Delivery</p>
+    </div>
+
+    <div class="card">
+      <h3>Standard</h3>
+      <div class="price">₹499</div>
+      <p>Professional Design<br>2 Revisions<br>HD Quality</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <div class="price">₹999+</div>
+      <p>Premium Editing<br>Multiple Revisions<br>High Quality Output</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Place Your Order</h2>
+
+  <p>Apna kaam WhatsApp par bhejiye aur price confirm kijiye.</p>
+
+  <!-- YAHAN APNA WHATSAPP NUMBER LAGANA HAI -->
+  <a class="btn" href="https://wa.me/918475832441" 
+      target="_blank">
+    WhatsApp Me
+  </a>
+</section>
+
+<footer>
+  © 2026 Ishu Editing Studio | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918475832441" target="_blank">
+  💬 WhatsApp
+</a>
+
+</body>
+    </html>
